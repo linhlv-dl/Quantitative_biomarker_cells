@@ -21,7 +21,7 @@ Laboratory Investigation,
 2025,
 104094,
 ISSN 0023-6837,
-https://doi.org/10.1016/j.labinv.2025.104094. [https://www.sciencedirect.com/science/article/pii/S0023683725000042]
+https://doi.org/10.1016/j.labinv.2025.104094.
 ```
 @article{BELTZUNG2025104094,
 title = {Leveraging Deep Learning for Immune Cell Quantification and Prognostic Evaluation in Radiotherapy-Treated Oropharyngeal Squamous Cell Carcinomas.},
