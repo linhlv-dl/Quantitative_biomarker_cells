@@ -9,23 +9,23 @@
 Please refer to this instructions to use this system to quantify the biomarker cells.
 
 The organization of the repository as follows:
-````
+
+```
 data/
 	└── Cell count CD3 1000 tiles.xlsx
 ```
-
 The data folder contains the excel file which provide the counting from two experts for 1000 tiles on CD3.
 To find the 1000 tiles in CD3, please refer to the [OME](https://demo.openmicroscopy.org/webclient/?show=dataset-2171)
 
 ```
 src/
-	├── slide_1.svs
-	├── slide_2.svs
+	├── main.py
+	├── inference.py
+	├── inference_all.py
+	├── inference_all_png.svs
+	├── extract_1000_tiles.py
 	└── ...
 ```
-
-## License
- This code is made available under the GPLv3 License and is available for non-commericial academic purposes.
 
 If you would like to use this system to train the model on your data, you can use the `main.py` to run the training process.
 In the `main.py` file, you should modify some parameters to adapt with your configurations:
@@ -33,6 +33,14 @@ In the `main.py` file, you should modify some parameters to adapt with your conf
  - `n-nodes` = number of nodes that you use to train the model
  - `n_gpus` = number of GPUs on each node to train the model
  - `datasets` = the path to the your dataset
+
+The `inference.py` file contains the code for testing the segmentation model by using our version of Unet.
+The `inference_all.py` contains the code for testing process including segmentation and quanfify the number of cells.
+These inference program input a npz file which contains the extracted tiles from Whole Slide Images (WSIs) stored in numpy array.
+If you have already the png tiles, you can use the program in `inference_all_png.py` for inference (segmentation and quantify the number of cells).
+
+## License
+ This code is made available under the GPLv3 License and is available for non-commericial academic purposes.
 
 ## Reference
 If you find our work useful in your research or if you use parts of this code please consider citing our paper:
