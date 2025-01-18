@@ -53,8 +53,7 @@ If you have already the png tiles, you can use the program in `inference_all_png
 ## Reference
 If you find our work useful in your research or if you use parts of this code please consider citing our paper:
 
-Fanny Beltzung, Van Linh Le, Ioana Molnar, Erwan Boutault, Claude Darcha, François Le Loarer, Myriam Kossai, Olivier Saut, Julian Biau, Frédérique Penault-Llorca, Emmanuel Chautard,
-Leveraging Deep Learning for Immune Cell Quantification and Prognostic Evaluation in Radiotherapy-Treated Oropharyngeal Squamous Cell Carcinomas.,
+Fanny Beltzung, Van Linh Le, Ioana Molnar, Erwan Boutault, Claude Darcha, François Le Loarer, Myriam Kossai, Olivier Saut, Julian Biau, Frédérique Penault-Llorca, Emmanuel Chautard, `Leveraging Deep Learning for Immune Cell Quantification and Prognostic Evaluation in Radiotherapy-Treated Oropharyngeal Squamous Cell Carcinomas`, 
 Laboratory Investigation,
 2025,
 104094,
