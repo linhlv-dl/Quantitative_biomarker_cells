@@ -18,6 +18,12 @@ The data folder contains the excel file which provide the counting from two expe
 To find the 1000 tiles in CD3, please refer to the [OME](https://demo.openmicroscopy.org/webclient/?show=dataset-2171)
 
 ```
+model_weight/
+	└── unet_cd3.ckpt
+```
+The `model_weight` provides the pre-trained Unet model on CD3. For other pre-trained models, please contact with us for the links.
+
+```
 src/
 	├── main.py
 	├── inference.py
@@ -35,8 +41,10 @@ In the `main.py` file, you should modify some parameters to adapt with your conf
  - `datasets` = the path to the your dataset
 
 The `inference.py` file contains the code for testing the segmentation model by using our version of Unet.
+
 The `inference_all.py` contains the code for testing process including segmentation and quanfify the number of cells.
-These inference program input a npz file which contains the extracted tiles from Whole Slide Images (WSIs) stored in numpy array.
+
+These inference program input a `npz` file which contains the extracted tiles from Whole Slide Images (WSIs) stored in numpy array (compress to npz).
 If you have already the png tiles, you can use the program in `inference_all_png.py` for inference (segmentation and quantify the number of cells).
 
 ## License
