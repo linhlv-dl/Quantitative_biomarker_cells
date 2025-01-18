@@ -9,17 +9,21 @@
 Please refer to this instructions to use this system to quantify the biomarker cells.
 
 The organization of the repository as follows:
-
+````
 data/
 	└── Cell count CD3 1000 tiles.xlsx
+```
 
 The data folder contains the excel file which provide the counting from two experts for 1000 tiles on CD3.
 To find the 1000 tiles in CD3, please refer to the [OME](https://demo.openmicroscopy.org/webclient/?show=dataset-2171)
 
+```
 src/
 	├── slide_1.svs
 	├── slide_2.svs
 	└── ...
+```
+
 ## License
  This code is made available under the GPLv3 License and is available for non-commericial academic purposes.
 
